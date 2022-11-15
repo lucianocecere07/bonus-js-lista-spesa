@@ -22,8 +22,18 @@ aggiungi.addEventListener("click", function(){
     let prodotto = document.getElementById("input-prodotto").value;
     arraySpesa.push(prodotto);
     console.log("elemento da comprare: " + arraySpesa[i]);
-    document.getElementById("elemento").innerHTML += "<li>" + arraySpesa[i] + "</li>";
+    document.getElementById("elemento").innerHTML += "<li>" + prodotto + "</li>";
 });
+
+
+
+
+
+
+
+
+
+
 
 /* let elimina = document.getElementById("elimina");
 
