@@ -13,14 +13,23 @@
 <body>
   <div class="container p-4">
     <h1 id="titolo">Lista della spesa</h1>
-    <ul id="elemento">
-    </ul>
-    <div id="nuovoProdotto" class="row">
-      <div class="col-9">
-        <input type="text" class="form-control" id="input-prodotto">
+    <div class="lista bg-success p-2 text-dark bg-opacity-50 rounded-4">
+      <ul id="elemento"></ul>
+      <div id="nuovoProdotto" class="row pb-3">
+        <div class="col-9">
+          <input type="text" class="form-control" id="input-prodotto">
+        </div>
+        <div class="col-3">
+          <button id="aggiungi" type="button">Aggiungi prodotto</button>
+        </div>
       </div>
-      <div class="col-3">
-        <button id="aggiungi" type="button">Aggiungi prodotto</button>
+      <!-- <div id="eliminaProdotto" class="row pb-2">
+        <div class="col-9">
+          <label type="text" class="form-control" id="input-prodotto">Elimina ultimo prodotto segnato</label>
+        </div>
+        <div class="col-3">
+          <button id="elimina" type="button">Elimina prodotto</button>
+        </div> -->
       </div>
     </div>
 

@@ -24,3 +24,11 @@ aggiungi.addEventListener("click", function(){
     console.log("elemento da comprare: " + arraySpesa[i]);
     document.getElementById("elemento").innerHTML += "<li>" + arraySpesa[i] + "</li>";
 });
+
+/* let elimina = document.getElementById("elimina");
+
+elimina.addEventListener("click", function(){
+    arraySpesa.pop();
+    console.log(arraySpesa);
+    document.getElementById("elemento").innerHTML = "<li>" + arraySpesa[i] + "</li>";
+}); */
