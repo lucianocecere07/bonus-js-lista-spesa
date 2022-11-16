@@ -13,32 +13,29 @@ while (i < arraySpesa.length) {
 
 for (i = 0; i < arraySpesa.length; i++) {
     console.log("elemento da comprare: " + arraySpesa[i]);
-    document.getElementById("elemento").innerHTML += "<li>" + arraySpesa[i] + "</li>";
+    document.getElementById("lista").innerHTML += "<li>" + arraySpesa[i] + "<button type='button'>Rimuovi</button> </li>";
 }
 
+//Tasto per aggiungere un nuovo prodotto
 let aggiungi = document.getElementById("aggiungi");
 
 aggiungi.addEventListener("click", function(){
     let prodotto = document.getElementById("input-prodotto").value;
     arraySpesa.push(prodotto);
     console.log("elemento da comprare: " + arraySpesa[i]);
-    document.getElementById("elemento").innerHTML += "<li>" + prodotto + "</li>";
+    document.getElementById("lista").innerHTML += "<li>" + arraySpesa[i] + "<button type='button'>Rimuovi</button> </li>";
 });
 
 
 
-
-
-
-
-
-
-
-
-/* let elimina = document.getElementById("elimina");
+/*
+//tasto per eliminare un prodotto
+let elimina = document.getElementById("elimina");
 
 elimina.addEventListener("click", function(){
-    arraySpesa.pop();
-    console.log(arraySpesa);
-    document.getElementById("elemento").innerHTML = "<li>" + arraySpesa[i] + "</li>";
-}); */
+    let prodotto = document.getElementById("input-prodotto").value;
+    arraySpesa.push(prodotto);
+    console.log("elemento da comprare: " + arraySpesa[i]);
+    document.getElementById("lista").innerHTML += "<li>" + arraySpesa[i] + "<button id='elimina' type='button'>Rimuovi</button> </li>";
+});
+*/
